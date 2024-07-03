@@ -49,10 +49,15 @@ This project is a Auth + Dashboard (Home/Favorite tabs): Fetches users, fav/unfa
 
 ### Screenshots/GIFs
 
-![Preview](./screenshots/screen1.png)
-![Preview](./screenshots/screen2.png)
-![Preview](./screenshots/screen3.png)
-![Preview](./screenshots/screen4.png)
+Home             |  Empty Favorite
+:-------------------------:|:-------------------------:
+![Preview](./screenshots/screen1.png) | ![Preview](./screenshots/screen2.png)
+
+Filled Favorite             |  Login
+:-------------------------:|:-------------------------:
+![Preview](./screenshots/screen3.png) | ![Preview](./screenshots/screen4.png)
+
+![Preview](./screenshots/video.gif)
 
 - Favorite/Unfavorite feature in action
 - Other relevant features

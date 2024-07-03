@@ -26,7 +26,7 @@ const Layout: React.FC<any> = ({children, containerStyle, footer}) => {
     <View style={tw.style('flex-1 bg-white')}>
       <StatusBar
         animated
-        hidden={Platform.OS === 'android'}
+        // hidden={Platform.OS === 'android'}
         backgroundColor={tw.color('white')}
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
       />
