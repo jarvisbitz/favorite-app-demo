@@ -66,10 +66,12 @@ const ListWithDetail: React.FC<ListItemProps> = React.memo(
           style={tw.style(
             'absolute left-5 lg:left-10 right-0 top-0 bottom-0 p-2 pl-18 lg:pl-24 bg-white rounded-2xl flex-row justify-between',
           )}>
-          <View style={tw.style('flex gap-2 justify-center')}>
+          <View style={tw.style('flex-1 gap-0 justify-center')}>
             <Text
+              numberOfLines={1}
+              ellipsizeMode="tail"
               style={tw.style(
-                'font-roboto text-lg lg:text-3xl font-bold text-primary',
+                'flex-initial font-roboto text-lg lg:text-3xl font-bold text-primary',
               )}>
               {item?.name?.title} {item?.name?.first} {item?.name?.last}
             </Text>
@@ -79,14 +81,16 @@ const ListWithDetail: React.FC<ListItemProps> = React.memo(
                 size={tw.prefixMatch('tablet') ? 24 : 15}
               />
               <Text
+                numberOfLines={1}
+                ellipsizeMode="tail"
                 style={tw.style(
-                  'font-roboto text-sm lg:text-2xl text-secondary text-opacity-60',
+                  'flex-initial font-roboto text-sm lg:text-2xl text-secondary text-opacity-60',
                 )}>
                 {item?.location?.city}, {item?.location?.state},{' '}
                 {item?.location?.country}
               </Text>
             </View>
-            <View style={tw.style('flex flex-row')}>
+            <View style={tw.style('flex flex-row mt-2')}>
               <View
                 style={tw.style(
                   'bg-opacity-20 px-1 py-0.5 lg:px-2 lg:py-1 rounded-sm lg:rounded-lg',
